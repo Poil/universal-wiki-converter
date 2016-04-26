@@ -43,7 +43,7 @@ public class EscapeBracesConverter extends BaseConverter {
 	}
 
 	protected String tokenizePre(String input) {
-		return tokenize(input, "(<pre>.*?<\\/pre>){replace-multiline-with}$1", "pre");
+		return tokenize(input, "(<(pre|code|source|syntaxhighlight)[^>]*>.*?<\\/(pre|code|source|syntaxhighlight)>){replace-multiline-with}$1", "pre");
 	}
 
 	protected String tokenizeDoubleBraceSyntax(String input) {
