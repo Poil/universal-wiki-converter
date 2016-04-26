@@ -9,3 +9,4 @@ sampleData/*/*Output*
 output
 tmp/
 archive
+conf/confluenceSettings.properties
