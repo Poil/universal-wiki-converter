@@ -1,8 +1,7 @@
 Universal Wiki Converter readme.txt file
 
-To build the UWC use ANT (http://ant.apache.org/):
-* cd devel (the devel dir.)
-* ant      (the default target will build the UWC under 
+To build the UWC use :
+* ./run_build_zip.sh
 
 Note: you do not need to build the UWC to run it; only if you're doing development work with it. 
 
