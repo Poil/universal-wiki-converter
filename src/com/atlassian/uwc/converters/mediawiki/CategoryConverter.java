@@ -8,7 +8,7 @@ import com.atlassian.uwc.ui.Page;
 
 public class CategoryConverter extends BaseConverter {
 
-	Pattern category = Pattern.compile("(?i)\\[\\[category:([^\\]]+)\\]\\]");
+	Pattern category = Pattern.compile("(?i)\\[\\[cat.gor[a-z]+:([^\\]]+)\\]\\]");
 	public void convert(Page page) {
 		String input = page.getOriginalText();
 		Matcher catFinder = category.matcher(input);
